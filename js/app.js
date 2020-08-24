@@ -36,14 +36,11 @@ function letterId(array) {
     for (var i = 0; i < array.length; i++) {
         if (array[i].startsWith('Ph')) {
             return array[i];
-
-        } else {
-            console.log("cannot find 'Ph' at the beginning of any of the examples");
         }
     }
 }
 
 
-var arrayInput = ["Bonjour", "Phoney", "Ham", "Goodbye"];
+var arrayInput = ["Bonjour", "Phoney", "Phobe", "Goodbye"];
 var arrayResult = letterId(arrayInput);
 console.log(arrayResult)
